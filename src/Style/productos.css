@@ -1,0 +1,11 @@
+.conteinerProductos{
+    font-family: cursive;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    margin-right: 40px;
+    margin-left: 25px;
+    border-radius: 0 10px;
+    
+}
