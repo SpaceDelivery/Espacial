@@ -1,7 +1,16 @@
 body{
     margin: 0;
     font-family: cursive;
+    height: 100vh;
 } 
+.section1{
+    height: 100%;
+    background-attachment: fixed;
+}
+.section:nth-child(1){
+    background-image: url(C:\Users\BROOK\espacial\public\assets\logo.png);
+}
+
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);

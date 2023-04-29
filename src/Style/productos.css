@@ -1,11 +1,23 @@
-.conteinerProductos{
-    font-family: cursive;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    text-align:justify;
-    margin-right: 40px;
-    margin-left: 25px;
-    border-radius: 0 10px;
+.conteiner-prod{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    margin-left: 2.33%;
+    background-color: rgba(128, 148, 238, 0.459);
+    border-style: solid;
+    text-align: center;
+}
+.tarjet1{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 10px;
+    border-style: solid;
+    background-color: red;
+}
+.img-producto{
     
+    height: 250px;
+    width: 40%;
+    object-fit: scale-down;
 }
