@@ -1,8 +1,10 @@
 body{
     margin: 0;
-    font-family: cursive;
-    height: 100vh;
-} 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #C9D6FF; 
+    background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  
+    background: linear-gradient(to bottom, #E2E2E2, #C9D6FF);
+}
 .section1{
     height: 100%;
     background-attachment: fixed;
