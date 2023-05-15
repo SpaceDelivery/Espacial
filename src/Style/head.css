@@ -1,73 +1,322 @@
+.head {
+    background: #131133;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px, 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px -3px;
+    z-index: 1;
+}
 
-a{
+
+.head div {
+    display: flex;
+    align-items: center;
+}
+
+.head a {
+    margin: 0 10px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 15px;
-}
-.menu-fixed {
-	position:fixed;
-	top:0;
-	max-width:100px;
-	width:100%;
-	box-shadow:11px 8px 10px rgba(37, 15, 15, 0.5);
-}
-.head{
-    background: #FFAD64; 
-    width:100%;  
-    display: flex;
-    z-index: 1000;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100px;
-    padding: 1px, 1px;
-    padding-bottom: 7px;
-    position:fixed;
-	top:0;
-	box-shadow:1px 8px 10px rgba(0,0,0,.5);
-    
-}
-.logo{
-    display: flex;
-    align-items: center;
-    padding: 1px, 0px;
-}
-.logoName{
-    font-size: 1rem;
 }
 
-.logo-img{
-   height:60px;
-   margin-right: 15px;
-
+.logo {
+    background-color: #94a1dc;
+    margin-left: 10em;
 }
-.logo:hover{
-    background: #9c03f4;
-    color: #fff;
+
+.logo img {
+    width: 5em;
+}
+
+.logo h4 {
+    margin: 5px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu {
+    margin-right: 5em;
+}
+
+.menu span {
+    color: #94a1dc;
+    padding: 10px 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
     border-radius: 5px;
-    box-shadow: 0 0 5px #9c03f4,
-                0 0 25px #9c03f4,
-                0 0 50px #9c03f4,
-                0 0 100px #9c03f4;
+    transition: .2s;
 }
 
-nav{
-    padding-bottom: 15px;
-}
-nav a:hover{
-    background: #9c03f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #9c03f4,
-                0 0 25px #9c03f4,
-                0 0 50px #9c03f4,
-                0 0 100px #9c03f4;
+.menu span:hover {
+    background-color: #94a1dc;
+    color: #131133;
 }
 
-@media(min-width:1000px){
-    .head{
-        flex-direction: row;
-        padding: 0px, 0px;
-        justify-content: space-between;
-        
+.btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn button {
+    margin: 0 10px;
+    transition: .2s;
+}
+
+.btn button:nth-child(1) {
+    background-color: transparent;
+    color: #94a1dc;
+}
+
+.btn button:nth-child(2) {
+    background-color: #94a1dc;
+    color: #131133;
+}
+
+.btn button:nth-child(1):hover {
+    background-color: #94a1dc;
+    color: #131133;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    padding: 0 30px;
+}
+
+.btn button:nth-child(2):hover {
+    background-color: transparent;
+    color: #94a1dc;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    padding: 0 30px;
+}
+
+.label {
+    display: none;
+    left: 100%;
+    color: #94a1dc;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    .head div {
+        margin: 0 40px;
     }
+
+    .head .menu {
+        margin: 0;
+    }
+
+    .menu a{
+        margin: 0;
+    }
+
+    .menu span {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 5em;
+    }
+
+    .logo h4 {
+        letter-spacing: 3px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .btn button {
+        margin: 0px 0;
+    }
+
+    .btn button {
+        font-size: 14px;
+        height: 50px;
+        width: 150px;
+    }
+}
+
+
+/* Larger than desktop */
+@media (max-width: 1000px) {
+    .head a {
+        margin: 0 5px;
+    }
+
+    .logo {
+        margin-left: 6em;
+    }
+
+    .menu {
+        margin-right: 3em;
+    }
+
+}
+
+/* Larger than tablet */
+@media (max-width: 750px) {
+
+    header .menu {
+        display: none;
+    }
+
+    .head div {
+        margin: 0 95px;
+    }
+
+    .menu span {
+        padding: 15px 80px;
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 6em;
+    }
+
+    .logo h4 {
+        letter-spacing: 4px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .label {
+        display: flex;
+        z-index: 3;
+        justify-content: center;
+        width: 30%;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .3s;
+        transition-property: color;
+    }
+
+    .label:hover {
+        color: #fff;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .btn button {
+        margin: 20px 0;
+    }
+
+    .btn button {
+        font-size: 18px;
+        height: 60px;
+        width: 300px;
+    }
+
+    #check:checked ~ header .menu {
+        z-index: 2;
+        position: fixed;
+        background-color: rgba(81, 92, 129, .9);
+        width: 85%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .menu a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+    
+    .head div {
+        margin: 0 100px;
+    }
+
+    #check:checked ~ header .menu a {
+        margin-bottom: 100px;
+    }
+
+    .menu span {
+        padding: 25px 120px;
+        font-size: 26px;
+    }
+
+    .logo img {
+        width: 8em;
+    }
+
+    .logo h4 {
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+
+    .btn button {
+        margin: 30px 0;
+    }
+
+    .btn button {
+        font-size: 24px;
+        height: 75px;
+        width: 350px;
+    }
+
+    .label i{
+        font-size: 50px;
+    }
+}
+
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+
+    .head div {
+        margin: 0 100px;
+    }
+
+    #check:checked ~ header .menu a {
+        margin-bottom: 120px;
+    }
+
+    .menu span {
+        padding: 30px 150px;
+        font-size: 40px;
+    }
+
+    .logo img {
+        width: 10em;
+    }
+
+    .logo h4 {
+        letter-spacing: 5px;
+        font-size: 36px;
+    }
+
+    .btn button {
+        margin: 30px 0;
+    }
+
+    .btn button {
+        font-size: 36px;
+        height: 120px;
+        width: 420px;
+    }
+
+    .label i{
+        font-size: 60px;
+    }
+
 }

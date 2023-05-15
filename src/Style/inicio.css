@@ -1,0 +1,81 @@
+main .main-content-home{
+    background: url("../../public/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center start;
+    min-height: 150vh;
+    box-sizing: border-box;
+}
+
+.content-info{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.content-info .info{
+    padding: 15em 10em 2em;
+    width: 1100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.content-info .info h2{
+    color: #604182;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.content-info .info h4{
+    color: #d1b3e3;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+.content-info .info p{
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.content-info .mision{
+    padding-top: 20em;
+    text-align: right;
+    align-self: flex-end;
+}
+
+
+/* Larger than Desktop HD */
+@media (max-width: 1200px) {
+    .content-info .info{
+        padding: 15em 5em 2em;
+        width: 900px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+}
+
+/* Larger than desktop */
+@media (max-width: 1000px) {}
+
+/* Larger than tablet */
+@media (max-width: 750px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {}
+
+
+/* Larger than mobile */
+@media (max-width: 400px) {}

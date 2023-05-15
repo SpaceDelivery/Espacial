@@ -1,22 +1,56 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import React from "react";
-import'./Style/footer.css';
-export const Footer = () =>{
+
+import './Style/footer.css';
+export const Footer = () => {
   return (
-    <footer className="conteiner-F" >
-      <div className="footer-text" id="Sobrenosotros-Text">
-        <h3 className="subtitulo">Sobre nosotros</h3>
-        <p className="texto">
-        Bienvenidos a nuestra empresa de comercio electrónico que ofrece un servicio de entrega a domicilio similar al de Mercado Libre. Nos enorgullece ser una empresa joven y dinámica que ha logrado crecer rápidamente en el mercado gracias a nuestro enfoque en la calidad del servicio al cliente y la innovación tecnológica.
+    <div className="container">
+      <footer className="footer">
+        <div className="main-content-footer" id="contact">
 
-        Nuestro equipo está compuesto por profesionales altamente capacitados en las áreas de tecnología, logística y servicio al cliente. Trabajamos en equipo para asegurarnos de que cada aspecto de nuestra empresa funcione sin problemas y proporcionemos una experiencia de compra en línea sin igual.
+          <div className="footer-links">
+            <div className="about">
+              <h5>¡Gracias por elegirnos como su proveedor de confianza!</h5>
+              <p>En SpaceDelivery, nos esforzamos por ofrecer una experiencia de compra en línea excepcional y garantizar la satisfacción del cliente.</p>
+            </div>
 
-        Creemos que el servicio al cliente es la piedra angular de nuestro negocio y siempre estamos buscando maneras de mejorar la satisfacción de nuestros clientes. Nos enorgullece ofrecer un servicio de atención al cliente altamente personalizado y siempre estamos disponibles para ayudar a nuestros clientes a resolver cualquier problema o responder cualquier pregunta que puedan tener.
+            <div className="about-links">
+              <a href="https://instagram.com" rel="noreferrer" target="_blank" className="foot-link"><i className="fa-brands fa-instagram fa-xl"></i><span id="social">@SpaceDelivery</span></a>
+              <a href="https://facebook.com" rel="noreferrer" target="_blank" className="foot-link"><i className="fa-brands fa-facebook fa-xl"></i><span id="social">@SpaceDelivery</span></a>
+              <a href="https://twitter.com" rel="noreferrer" target="_blank" className="foot-link"><i className="fa-brands fa-twitter fa-xl"></i><span id="social">@SpaceDeliveryOficial</span></a>
+            </div>
 
-        Nuestro sitio web es fácil de usar y permite a los clientes buscar y comprar una amplia variedad de productos de alta calidad en línea. Ofrecemos envío a domicilio en todo el país, así como la opción de recoger los productos en nuestras tiendas locales. También ofrecemos precios competitivos y promociones regulares para asegurarnos de que nuestros clientes obtengan los mejores precios en sus compras.
+          </div>
 
-        En resumen, somos una empresa de comercio electrónico comprometida en proporcionar una experiencia de compra en línea de alta calidad con un enfoque en el servicio al cliente. Esperamos poder servirle pronto y hacer de su experiencia de compra una experiencia excepcional.
-        </p>
-      </div>  
-    </footer>   
-  );
+          <div className="contact-us">
+
+            <form>
+              <h3>contáctanos</h3>
+              <div className="user-info">
+                <label htmlFor="email">email</label>
+                <input></input>
+
+                <label htmlFor="fullname">fullname</label>
+                <input></input>
+
+                <label htmlFor="phone">phone</label>
+                <input></input>
+
+                <a href='' className='nav-link'><span>Envíar</span></a>
+              </div>
+            </form>
+
+            <div className="footer-img"></div>
+          </div>
+
+        </div>
+
+        <div className="copyright">
+              <span>© SpaceDelivery 2023</span>
+            </div>
+            
+      </footer>
+    </div>
+  )
 };
