@@ -19,7 +19,7 @@ root.render(
         <Header />
         <Inicio />
         <Productos />
-        <Footer />
+        
         
 
     </>

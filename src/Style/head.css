@@ -109,37 +109,31 @@
         margin: 0 40px;
     }
 
-    .head .menu {
-        margin: 0;
-    }
-
     .menu a{
-        margin: 0;
+        margin: 0 5px;
     }
 
     .menu span {
-        padding: 12px 30px;
-        font-size: 16px;
+        padding: 12px 20px;
+        font-size: 12px;
     }
 
     .logo img {
-        width: 5em;
+        width: 4em;
     }
 
     .logo h4 {
         letter-spacing: 3px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     .btn button {
-        margin: 0px 0;
-    }
-
-    .btn button {
-        font-size: 14px;
-        height: 50px;
-        width: 150px;
+        margin: 0 15px 0 0;
+        font-size: 12px;
+        text-align: center;
+        height: 40px;
+        width: 160px;
     }
 }
 
@@ -150,12 +144,20 @@
         margin: 0 5px;
     }
 
+    .head .menu {
+        margin: 0 18em 0 0;
+    }
+
     .logo {
         margin-left: 6em;
     }
-
-    .menu {
-        margin-right: 3em;
+    
+    .btn button {
+        margin: 0 12px 0 0;
+        font-size: 12px;
+        text-align: center;
+        height: 40px;
+        width: 160px;
     }
 
 }
@@ -168,7 +170,7 @@
     }
 
     .head div {
-        margin: 0 95px;
+        margin: 0 80px;
     }
 
     .menu span {
@@ -177,12 +179,12 @@
     }
 
     .logo img {
-        width: 6em;
+        width: 4em;
     }
 
     .logo h4 {
         letter-spacing: 4px;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
     }
 
@@ -219,7 +221,7 @@
         z-index: 2;
         position: fixed;
         background-color: rgba(81, 92, 129, .9);
-        width: 85%;
+        width: 100%;
         top: 0;
         bottom: 0;
         left: 0;
@@ -243,7 +245,7 @@
 @media (max-width: 550px) {
     
     .head div {
-        margin: 0 100px;
+        margin: 0 40px;
     }
 
     #check:checked ~ header .menu a {
@@ -256,12 +258,12 @@
     }
 
     .logo img {
-        width: 8em;
+        width: 4em;
     }
 
     .logo h4 {
-        letter-spacing: 5px;
-        font-size: 30px;
+        letter-spacing: 3px;
+        font-size: 20px;
     }
 
     .btn button {
@@ -275,7 +277,7 @@
     }
 
     .label i{
-        font-size: 50px;
+        font-size: 30px;
     }
 }
 
@@ -284,39 +286,39 @@
 @media (max-width: 400px) {
 
     .head div {
-        margin: 0 100px;
+        margin: 0 30px;
     }
 
     #check:checked ~ header .menu a {
-        margin-bottom: 120px;
+        margin-bottom: 60px;
     }
 
     .menu span {
-        padding: 30px 150px;
-        font-size: 40px;
+        padding: 15px 70px;
+        font-size: 20px;
     }
 
     .logo img {
-        width: 10em;
+        width: 3em;
     }
 
     .logo h4 {
-        letter-spacing: 5px;
-        font-size: 36px;
+        letter-spacing: 2px;
+        font-size: 20px;
     }
 
     .btn button {
-        margin: 30px 0;
+        margin: 20px 0;
     }
 
     .btn button {
-        font-size: 36px;
-        height: 120px;
-        width: 420px;
+        font-size: 22px;
+        height: 60px;
+        width: 250px;
     }
 
     .label i{
-        font-size: 60px;
+        font-size: 25px;
     }
 
 }
